@@ -321,7 +321,7 @@ fun testNullableBoolean() {
 /**
  * 交换两个变量
  * */
-fun testAlso(){
+fun testAlso() {
     var a = 1
     var b = 2
     a = b.also { b = a }

@@ -213,7 +213,7 @@ fun testRange2() {
     }
 }
 
-fun testRange3(){
+fun testRange3() {
     for (x in 1..10 step 2) {
         print(x)
     }
@@ -226,23 +226,23 @@ fun testRange3(){
 /**
  * 集合
  * */
-fun testCollection(){
+fun testCollection() {
     val items = listOf("apple", "banana", "kiwifruit")
     for (item in items) {
         println(item)
     }
 }
 
-fun testCollection2(){
+fun testCollection2() {
     val fruits = listOf("banana", "avocado", "apple", "kiwifruit")
     fruits
-            //过滤已'a'开头的字符串
+        //过滤已'a'开头的字符串
         .filter { it.startsWith("a") }
-            //按Sting 实现的comparable进行排序
+        //按Sting 实现的comparable进行排序
         .sortedBy { it }
-            //转换 变成大写
+        //转换 变成大写
         .map { it.toUpperCase() }
-            //将结果依次输出
+        //将结果依次输出
         .forEach { println(it) }
 }
 
@@ -267,7 +267,7 @@ class Rectangle(
 /**
  * 创建基本类及其实例
  * */
-fun testParentClass(){
+fun testParentClass() {
     val rectangle = Rectangle(5.0, 2.0)
     val triangle = Triangle(3.0, 4.0, 5.0)
     println("Area of rectangle is ${rectangle.calculateArea()}, its perimeter is ${rectangle.perimeter}")
